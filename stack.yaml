@@ -1,0 +1,9 @@
+
+flags: {}
+packages:
+- servant-jsonrpc
+- servant-jsonrpc-server
+
+extra-deps: []
+
+resolver: lts-13.2

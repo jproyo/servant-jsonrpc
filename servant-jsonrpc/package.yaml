@@ -1,0 +1,72 @@
+name:               servant-jsonrpc
+version:            '0.0.0.1'
+synopsis:           Servant JsonRpc 
+description:        Please see README.md
+category:           Web
+author:             Juan Pablo Royo Sales
+maintainer:         juanpablo.royo@gmail.com
+homepage:           https://github.com/jproyo/servant-jsonrpc
+
+extra-source-files:
+- README.md
+
+ghc-options:
+  - -O3
+  - -Wall
+  - -Wall
+  - -Werror
+  - -fno-warn-partial-type-signatures
+  - -fno-warn-deprecations # So we can have some `undefined` and yet be able to compile
+                           # TODO: remove once the executable starts using this
+  - -fno-warn-orphans
+  - -fconstraint-solver-iterations=0
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
+  - -Wno-unused-top-binds
+
+dependencies:
+  - aeson
+  - base
+  - first-class-families
+  - protolude
+  - servant
+  - servant-server
+
+default-extensions:
+  - ConstraintKinds
+  - DataKinds
+  - DeriveAnyClass
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveLift
+  - DerivingStrategies
+  - EmptyCase
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - MonadFailDesugaring
+  - MultiParamTypeClasses
+  - MultiWayIf
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PartialTypeSignatures
+  - PolyKinds
+  - RecordWildCards
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TemplateHaskell
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Servant.JsonRpc
+
+
